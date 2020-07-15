@@ -21,21 +21,12 @@ import org.springframework.web.context.WebApplicationContext;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class ProductControllerTest{
-	@Test
-	void contextLoads() {
-	} 
-	
-	/*
-	 * @Autowired private WebApplicationContext webApplicationContext;
-	 */
+
 	
 	@Autowired
 	MockMvc mockMvc;
 	
-	/*
-	 * @Before public void setUp() { mockMvc =
-	 * MockMvcBuilders.webAppContextSetup(webApplicationContext).build(); }
-	 */
+	
 
 	@Test
 	void testA() throws Exception {

@@ -1,5 +1,7 @@
 package com.hospital.controller;
 
+import java.math.BigInteger;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +14,10 @@ public class ProductController {
 	
 	@GetMapping
 	public Product a() {
-		return new Product();
+		Product product = new Product();
+		product.setId(new BigInteger("1"));
+		product.setName("Brick");
+		return product;
 	}
 
 }
